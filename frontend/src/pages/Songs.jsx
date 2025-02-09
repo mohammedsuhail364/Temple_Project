@@ -1,9 +1,8 @@
 const Songs = () => {
     // Dummy song data
     const songs = [
-      { id: 1, title: "Song One", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
-      { id: 2, title: "Song Two", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
-      { id: 3, title: "Song Three", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
+      { id: 1, title: "ஸ்ரீ செல்வ சுந்தர விநாயகர் சுப்ரபாதம்", url: "/assets/WhatsApp Audio 2025-02-09 at 2.42.38 PM.mp3" },
+      { id: 2, title: "குலம் விளங்க செய்வார் எங்க பிள்ளையார் சாமி", url: "/assets/WhatsApp Audio 2025-02-09 at 2.44.09 PM.mp3" },
     ];
   
     return (
