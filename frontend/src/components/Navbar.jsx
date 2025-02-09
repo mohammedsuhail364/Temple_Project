@@ -67,13 +67,13 @@ const Navbar = () => {
       <nav className="hidden md:flex justify-center space-x-8 py-2 bg-maroon">
         <a
           onClick={() => navigate("/")}
-          className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300"
+          className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300 cursor-pointer"
         >
           முகப்பு
         </a>
         <a
           onClick={() => navigate("/arimugam")}
-          className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300"
+          className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300 cursor-pointer"
         >
           அறிமுகம்
         </a>
@@ -85,7 +85,7 @@ const Navbar = () => {
         </a>
         <a
           onClick={() => navigate("/contact")}
-          className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300"
+          className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300 cursor-pointer"
         >
           தொடர்பு
         </a>
