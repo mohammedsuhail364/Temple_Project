@@ -96,25 +96,37 @@ const Navbar = () => {
         <div className="md:hidden bg-maroon text-white py-4 mt-2">
           <div className="flex flex-col items-center space-y-4">
             <a
-              onClick={() => navigate("/")}
+              onClick={() => {
+                navigate("/");
+                setIsMobileMenuOpen(false);
+              }}
               className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105"
             >
               முகப்பு
             </a>
             <a
-              onClick={() => navigate("/arimugam")}
+              onClick={() => {
+                navigate("/arimugam");
+                setIsMobileMenuOpen(false);
+              }}
               className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105"
             >
               அறிமுகம்
             </a>
             <a
-              onClick={() => navigate("/photos")}
+              onClick={() => {
+                navigate("/photos");
+                setIsMobileMenuOpen(false);
+              }}
               className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105 cursor-pointer"
             >
               கேலரி
             </a>
             <a
-              onClick={() => navigate("/contact")}
+              onClick={() => {
+                navigate("/contact");
+                setIsMobileMenuOpen(false);
+              }}
               className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105 cursor-pointer"
             >
               தொடர்பு
