@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -66,13 +66,13 @@ const Navbar = () => {
       {/* Navigation for larger screens */}
       <nav className="hidden md:flex justify-center space-x-8 py-2 bg-maroon">
         <a
-          href="/"
+          onClick={() => navigate("/")}
           className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300"
         >
           முகப்பு
         </a>
         <a
-          href="/arimugam"
+          onClick={() => navigate("/arimugam")}
           className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300"
         >
           அறிமுகம்
@@ -84,7 +84,7 @@ const Navbar = () => {
           கேலரி
         </a>
         <a
-          href="/contact"
+          onClick={() => navigate("/contact")}
           className="text-gold text-lg font-medium hover:text-yellow-400 transition duration-300"
         >
           தொடர்பு
@@ -93,36 +93,35 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-  <div className="md:hidden bg-maroon text-white py-4 mt-2">
-    <div className="flex flex-col items-center space-y-4">
-      <a
-        href="/"
-        className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105"
-      >
-        முகப்பு
-      </a>
-      <a
-        href="/arimugam"
-        className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105"
-      >
-        அறிமுகம்
-      </a>
-      <a
-        href="/photos"
-        className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105 cursor-pointer"
-      >
-        கேலரி
-      </a>
-      <a
-      href="/contact"
-        className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105 cursor-pointer"
-      >
-        தொடர்பு
-      </a>
-    </div>
-  </div>
-)}
-
+        <div className="md:hidden bg-maroon text-white py-4 mt-2">
+          <div className="flex flex-col items-center space-y-4">
+            <a
+              onClick={() => navigate("/")}
+              className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105"
+            >
+              முகப்பு
+            </a>
+            <a
+              onClick={() => navigate("/arimugam")}
+              className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105"
+            >
+              அறிமுகம்
+            </a>
+            <a
+              onClick={() => navigate("/photos")}
+              className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105 cursor-pointer"
+            >
+              கேலரி
+            </a>
+            <a
+              onClick={() => navigate("/contact")}
+              className="text-gold text-lg font-medium hover:text-yellow-400 hover:bg-opacity-20 hover:bg-gold px-4 py-2 rounded-md transition-transform duration-300 transform hover:scale-105 cursor-pointer"
+            >
+              தொடர்பு
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
