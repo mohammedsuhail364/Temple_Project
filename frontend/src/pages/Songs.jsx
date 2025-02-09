@@ -27,13 +27,7 @@ const Songs = () => {
                 Your browser does not support the audio element.
               </audio>
             </div>
-            <a
-              href={song.url}
-              download={song.title}
-              className="text-blue-600 hover:underline font-medium mt-2 md:mt-0"
-            >
-              Download
-            </a>
+           
           </li>
         ))}
       </ul>
